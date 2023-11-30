@@ -113,12 +113,14 @@ nav {
 
 .header__left-column-bottom-img {
   width: 6%;
+  min-width: 50px;
 }
 
 .arrow::before {
   content:  url("../icons/Arrow_alt_ldown_alt.svg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
 }
 
 #dolor {
@@ -232,7 +234,7 @@ nav {
 }
 
 .select__image {
-  width: 50%;
+  width: 90%;
 }
 
 #select {
@@ -252,6 +254,9 @@ nav {
 .contact__button {
   text-align: center;
   font-size: 1.5rem;
+  line-height: 147.7%;
+  color: #737373;
+  font-weight: 300;
 }
 
 #contact {
@@ -272,4 +277,147 @@ footer {
 
 .footer__description {
   color: #737373;
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 950px;
+  }
+  .logo__text {
+    font-size: 1.2rem;
+  }
+  .nav__link {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 949px) {
+  .container {
+    max-width: 600px;
+  }
+  header,
+  #select,
+  #dolor,
+  #sit,
+  #contact {
+    margin-bottom: 120px;
+  }
+  .logo__text {
+    font-size: 1.2rem;
+  }
+  .nav__link:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__link {
+    font-size: 1rem;
+  }
+  .header__right-column {
+    display: none;
+  }
+  .header__main-content {
+    height: 50%;
+  }
+  .header-text {
+    font-size: 1.2rem;
+  }
+  .dolor__cards {
+    flex-wrap: wrap;
+  }
+  .sit__second-section-title {
+    font-size: 1.2rem;
+  }
+  .select__image {
+    width: 100%;
+  }
+  .contact__image {
+    width: 80%;
+  }
+  .contact__button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  #select,
+  #dolor,
+  #sit,
+  #contact {
+    margin-bottom: 60px;
+  }
+  .nav__items {
+    display: none;
+  }
+  .logo__text {
+    font-size: 1.2rem;
+  }
+  .nav__link:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__link {
+    font-size: 1rem;
+  }
+  .header__right-column {
+    display: none;
+  }
+  .header__main-content {
+    height: 50%;
+  }
+  .header-text {
+    font-size: 1.2rem;
+  }
+  .dolor__cards {
+    flex-wrap: wrap;
+  }
+  .sit__second-section-title {
+    font-size: 1.2rem;
+  }
+  .select__image {
+    width: 100%;
+  }
+  .contact__image {
+    width: 80%;
+  }
+  .contact__button {
+    font-size: 1.2rem;
+  }
+  .header__left-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .header__left-description {
+    font-size: .9rem;
+    margin-bottom: 40px;
+  }
+  .main-button {
+    padding: 15px 25px;
+  }
+  .header__main-content {
+    height: 60%;
+  }
+  .title-text {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+  .dolor__cards {
+    gap: 30px;
+  }
+  .contact__grid {
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+    gap: 30px;
+  }
+  .contact__grid > a > img {
+    width: 100%;
+  }
+  .title-text {
+    margin-bottom: 30px;
+  }
 }
